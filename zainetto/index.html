@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html ng-app="ZainettoApp" data-ng-csp>
+<head>
+    <title>Zainetto.in</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/semantic.css"/>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/libs/angular/angular.js"></script>
+    <script type="text/javascript" src="js/libs/angular/angular-route.js"></script>
+    <script type="text/javascript" src="js/libs/angular/angular-resource.js"></script>
+
+    <script id="bootstrap" type="text/javascript" src="js/app.js" data-config=""></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <span class="app_title">Zainetto.com</span>
+            </div>
+            <div class="navmenu buttons">
+                <ul ng-controller="NavigationController">
+                    <li ng-repeat="nav in navs" ng-class='{active: selected==nav.id}'>
+                        <a href="#{{nav.navID}}" ng-click="menuClick()">{{nav.caption}}</a>
+                        <img src="img/nav_separator.png" width="3" height="29" alt="">
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
+        <footer>
+            <div class="clear left">
+                <p class="copyright">Copyright © 2014 Apple Inc. All rights reserved.</p>
+                <ul class="footerLink">
+                    <li><a href="#policy">Privacy Policy</a></li>
+                </ul>
+
+            </div>
+        </footer>
+    </div>
+    <ng-overlay class="overlay" ng-show="showOverlay"></ng-overlay>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+[
+    {
+        "id":  1,
+        "modelName" : "Éclat 10",
+        "description" : "10QFL16 -  10.1” Quad Core Fully Loaded with Calling"
+    },
+    {
+        "id":  2,
+        "modelName" : "DC1016K",
+        "description" : "10.1” Dual Core with Keyboard"
+    },
+    {
+        "id":  3,
+        "modelName" : "DC1016",
+        "description" : "10.1” Dual Core Tablet PC with 16GB"
+    },
+    {
+        "id":  4,
+        "modelName" : "Staple *",
+        "description" : "7.85” Dual Core 1GB RAM & 8GB Storage"
+    }
+]

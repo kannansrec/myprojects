@@ -1,0 +1,16 @@
+{
+    "navmenu":  [
+        {"id": 1, "navID": "home", "caption": "Home"},
+        {"id": 1, "navID": "products", "caption": "Products"},
+        {"id": 1, "navID": "techsupport", "caption": "Technical Support"},
+        {"id": 1, "navID": "enquiry", "caption": "Enquiry"},
+        {"id": 1, "navID": "careers", "caption": "Careers"}
+    ],
+
+    "products" : {
+        "models" : {
+
+        }
+    }
+
+}
